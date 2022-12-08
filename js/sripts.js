@@ -1,8 +1,8 @@
 const previousOperationText = document.querySelector("#previous-operation");
 const currentOperationText = document.querySelector("#current-operation");
-const buttons = document.querySelector("#buttons-container button");
+const buttons = document.querySelectorAll("#buttons-container button");
 
-class Calcuator {
+class Calculator {
     constructor(previousOperationText, currentOperationText) {
         this.previousOperationText = previousOperationText
         this.previousOperationText = currentOperationText
@@ -23,7 +23,7 @@ class Calcuator {
         this.currentOperationText.innerText += this.currentOperation;
     }
 }
-const calc = new Calcuator(previousOperationText, currentOperationText);
+const calc = new Calculator(previousOperationText, currentOperationText);
 
 buttons.forEach((btn) => {
     btn.addEventListener("click", (e) => {
@@ -32,7 +32,7 @@ buttons.forEach((btn) => {
         if (+value >= 0 || value === ".") {
             calc.addDigit(value)
         } else {
-            console.log("op: " + value)
+            console.log("Op: " + value)
         }
     });
 });
