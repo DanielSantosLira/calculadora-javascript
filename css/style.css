@@ -5,7 +5,7 @@
     font-family:  Helvetica;
 }
 body{
-    background-color: #333;
+    background-color: rgb(219, 157, 23);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,23 +14,24 @@ body{
 #calc{
     width: 400px;
     padding: .5em;
-    background-color: #c4c4c4;
-    color: #000;
+    background-color: #e9cbcb;
+    color: red;
     display: flex;
     flex-direction: column;
 }
 
 #calc h3{
-    font-size: .8em;
+    font-size: .9em;
     font-weight: 300;
-    color: #666;
+    color: #000;
 }
 
 #operations{
     text-align: right;
 }
 #previous-operation{
-    color: #777;
+   
+    color: #000;
    
 }
 #current-operation{
@@ -38,7 +39,7 @@ body{
     font-weight: 700;
    
 }
-#previous-operation
+#previous-operation,
 #current-operation{
     min-height: 1.6em;
     padding: 0.2em;
@@ -55,23 +56,28 @@ body{
     border-radius: 0;
     height: 4em;
     font-size: 1.2em;
-    background-color: #dbdbdb;
+    background-color: #000;
+    color: white;
     cursor: pointer;
 }
 #buttons-container .number{
-    background-color: #f3f3f3;
+    background-color: #000;
+    color: white;
 }
 #buttons-container button:hover{
-    background-color: #bababa;
+    background-color: rgb(203, 223, 24);
+    color: #000;
     border-color: #999;
 
 }
 #buttons-container #equal-btn{
     grid-column: span 2;
-    background-color: #75a5cb;
+    background-color: black;
+    color: white;
 
 }
 #buttons-container #equal-btn:hover{
-    background-color: #3a91d8;
+    background-color:rgb(203, 223, 24);
+    color:#000;
     
 }
