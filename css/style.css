@@ -28,16 +28,17 @@ body{
 
 #operations{
     text-align: right;
+    
+    
 }
 #previous-operation{
-   
     color: #000;
    
 }
 #current-operation{
     font-size: 3em;
     font-weight: 700;
-   
+    color: #000
 }
 #previous-operation,
 #current-operation{
